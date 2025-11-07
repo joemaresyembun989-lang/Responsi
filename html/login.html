@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" 
+     style="height:100vh; 
+            background: linear-gradient(135deg, #3f87a6, #ebf8e1, #f69d3c);
+            background: linear-gradient(135deg, #007bff, #0056b3);">
+
+    <div class="card shadow-lg p-4" style="width: 400px; border-radius: 15px;">
+        <h2 class="text-center mb-4 text-primary">Login Admin</h2>
+        <form method="POST">
+            <div class="mb-3">
+                <label class="form-label fw-bold text-secondary">Username</label>
+                <input type="text" name="username" class="form-control" placeholder="Masukkan username" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold text-secondary">Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Masukkan password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
